@@ -5,6 +5,9 @@ jobs:
   Run-a-test:
     runs-on: ubuntu-latest
     steps:
+      - name: Install selenium
+        run: pip install selenium
+     
       - uses: actions/checkout@v3
         
         
