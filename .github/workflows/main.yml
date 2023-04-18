@@ -5,4 +5,4 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
-      - run: python3 /selenium/teste.py 
+      - run: python3 teste.py 
