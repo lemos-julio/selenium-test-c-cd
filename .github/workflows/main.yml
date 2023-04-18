@@ -11,4 +11,4 @@ jobs:
       - name: Installing Chrome Driver
         uses: nanasess/setup-chromedriver@v2
       
-      - run: chromedriver
+      - run: echo $PATH
