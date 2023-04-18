@@ -15,7 +15,7 @@ def testBrowser():
     try:
         driver.get('https://www.selenium.dev/selenium/web/web-form.html')
         driver.find_element(By.ID,'my-text-id').send_keys('teste')
-        driver.find_element(By.NAME,'my-password').send_keys('teste')
+        driver.find_element(By.NAME,'my-passwor').send_keys('teste')
     except ValueError:
         print(ValueError())
 
