@@ -11,4 +11,11 @@ jobs:
       - name: Installing Chrome Driver
         uses: nanasess/setup-chromedriver@v2
       
-      - run: echo $PATH
+      - name: Install selenium
+        run: pip install selenium
+     
+      - uses: actions/checkout@v3
+        
+        
+      - name: Run test
+        run: python3 selenium/teste.py
