@@ -13,7 +13,7 @@ driver = webdriver.Chrome(service=service, options=options)
 
 def testBrowser():
     try:
-        driver.get('http://localhost:3000/')
+        driver.get('https://www.selenium.dev/selenium/web/web-form.html')
         driver.find_element(By.ID,'my-text-id').send_keys('teste')
     except ValueError:
         print(ValueError())
