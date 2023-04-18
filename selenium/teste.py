@@ -6,7 +6,7 @@ from selenium.webdriver.common.keys import Keys
 
 
 options =  webdriver.ChromeOptions()
-
+options.headless = True
 service = ChromeService(executable_path=ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=options)
 
