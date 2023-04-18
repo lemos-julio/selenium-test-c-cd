@@ -1,0 +1,20 @@
+.TeamSection {
+    text-align: center;
+    padding: 32px;
+}
+
+.TeamSection h3{
+    font-size: 32px;
+    border-bottom: 4px solid;
+    display: inline-block;
+    padding-bottom: 8px;
+    
+}
+
+.TeamSection .colaboradores{
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 32px 0 0;
+    flex-wrap: wrap;
+
+}
