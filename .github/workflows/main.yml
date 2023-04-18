@@ -9,7 +9,7 @@ jobs:
         run: sudo apt-get update
       
       - name: Installing Chrome Driver
-        run: apt-get install chromium-chromedriver
+        uses: nanasess/setup-chromedriver@v2
       
       - name: Install selenium
         run: pip install selenium
