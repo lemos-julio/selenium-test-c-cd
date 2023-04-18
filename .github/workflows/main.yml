@@ -5,6 +5,12 @@ jobs:
   Run-a-test:
     runs-on: ubuntu-latest
     steps:
+      - name: Updating SO
+        run: sudo apt-get update
+      
+      - name: Installing Chrome Driver
+        run: apt-get install chromium-chromedriver
+      
       - name: Install selenium
         run: pip install selenium
      
