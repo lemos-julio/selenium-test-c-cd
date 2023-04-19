@@ -1,6 +1,6 @@
 name: learn-github-actions
 run-name: ${{ github.actor }} is learning GitHub Actions
-on: [pull_request]
+on: [pull_request, push]
 jobs:
   Run-a-test:
     runs-on: ubuntu-latest
