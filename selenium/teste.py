@@ -10,7 +10,7 @@ from selenium.webdriver.support import expected_conditions as EC
 # from getCredencials import getCredencials
 
 options =  webdriver.ChromeOptions()
-# options.add_argument('--headless')
+options.add_argument('--headless')
 service = ChromeService(executable_path=ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=options)
 
