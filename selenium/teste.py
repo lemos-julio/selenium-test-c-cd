@@ -39,7 +39,8 @@ def testBrowser():
         wait.until(EC.title_is("Fazer login nas Contas do Google"))
         driver.find_element(By.ID, 'identifierId').send_keys(email)
         driver.find_element(By.ID, "identifierNext").click()
-        driver.find_element(By.NAME, 'password').send_keys("toolsmoon")
+        WebDriverWait(driver, timeout=10000)
+        driver.find_element(By.ID, 'password').send_keys("toolsmoon")
         
         
         print('Teste Concluido!')
