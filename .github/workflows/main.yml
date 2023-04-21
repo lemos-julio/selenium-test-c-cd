@@ -22,4 +22,3 @@ jobs:
         
       - name: Run test
         run: python3 selenium/teste.py
-        if: ${{ failure() }}
